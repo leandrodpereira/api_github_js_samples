@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+    
+        caption{
+            font-size: x-large; 
+            font-weight: bold;
+        }
+
+        thead tr th {
+           background-color: bisque;
+        }
+
+        th, td {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: left;
+        }
+    
+        th {
+          background-color: #f2f2f2;
+        }
+      </style>
+</head>
+<body>
+    <label for="git_id">Id: </label>
+    <input type="text" name="git_id" id="git_id">
+    <input type="button" value="Buscar">
+    <br /> <br />
+    <table>
+        <caption>GitHub API</caption>
+        <thead>
+          <tr>
+            <th>Nome do usuário</th>
+            <th>Bio</th>
+            <th>Número de seguidores</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="user"></td>
+            <td id="bio"></td>
+            <td id="followers"></td>
+            <td id="location"></td>
+          </tr>          
+        </tbody>
+      </table>
+    <script src="main.js"></script>
+</body>
+</html>
